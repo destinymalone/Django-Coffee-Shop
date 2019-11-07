@@ -11,7 +11,7 @@ class Coffee(models.Model):
 
 
 class Transaction(models.Model):
-    time = models.DateTimeField(default=timezone)
+    time = models.DateTimeField(default=timezone.now)
     item = models.ForeignKey(Coffee, on_delete=models.PROTECT)
     pre_tax = models.FloatField()
     tax = models.FloatField()
