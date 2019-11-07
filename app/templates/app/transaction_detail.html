@@ -11,5 +11,7 @@
     <dd>{{ transaction.pre_tax }}</dd>
     <dt>Tax</dt>
     <dd>{{ transaction.tax|floatformat:2 }}</dd>
+    <dt>Total</dt>
+    <dd> {{ transaction.total|floatformat:2 }}</dd>
 </dl>
 {% endblock content %}

@@ -2,7 +2,9 @@ from django.shortcuts import render, redirect
 from app.models import Coffee, Transaction
 from django.views import View
 
-# Create your views here.
+# Create your views here.8
+
+
 class Home(View):
     def get(self, request):
         home = Coffee.objects.all()
