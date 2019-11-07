@@ -10,6 +10,6 @@
     <dt>Pre Tax</dt>
     <dd>{{ transaction.pre_tax }}</dd>
     <dt>Tax</dt>
-    <dd>{{ transaction.tax }}</dd>
+    <dd>{{ transaction.tax|floatformat:2 }}</dd>
 </dl>
 {% endblock content %}
