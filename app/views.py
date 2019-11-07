@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from app.models import Coffee, Transaction
 from django.views import View
 
-# Create your views here.8
+# Create your views here.
 
 
 class Home(View):
