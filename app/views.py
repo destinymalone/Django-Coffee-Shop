@@ -20,5 +20,7 @@ class TransactionDetail(View):
 class BuyCoffee(View):
     def post(self, request, id):
         home = Coffee.objects.get(id=id)
-        t = Transaction.objects.create(item=home, pre_tax=home.price, tax=home.price * 0.07)
+        t = Transaction.objects.create(
+            item=home, pre_tax=home.price, tax=home.price * 0.07
+        )
         return redirect("transaction_detail", t.id)
